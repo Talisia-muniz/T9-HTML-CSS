@@ -1,0 +1,68 @@
+body { /* aplica o estilo a todos os elementos que estiverem dentro desta tag */
+    background: #ffc010; /* uma das formas de selecionar a cor */
+    font-family: 'Nunito', sans-serif; /* Nome da fonte principal seguida pelo nome da família genérica (sans-serif, serif, monospace) a família genérica será usada caso a principal não consiga carregar. */
+}
+
+.pre-titulo {
+    margin-bottom: 0; /* adiciona margem inferior*/
+}
+
+.titulo {
+   font-weight: bold;
+   margin: 4px 0 0; /* outra forma de adicionar margem. Adiciona 4px ao topo, 0 px aos lados e 0 abaixo. */
+}
+
+.header {
+    width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+.imagem {
+    width: 380px;
+    margin: auto;
+    margin-left: 28px;
+    vertical-align: middle; /* Centraliza o elemento  */
+}
+
+.texto {
+    vertical-align: middle;
+    width: 300px;
+    display: inline-block; /* transforma block em inline-block, queremos que este elemento dê espaço para que a imagem fique logo ao seu lado */
+    text-align: right; /* Centraliza o texto para a direita*/
+}
+
+.sobre {
+    text-align: center;
+}
+
+.conteudo {
+    width: 800px;
+    margin: 0 auto;
+    color: black; /* Outra forma de selecionar a cor */
+}
+
+.link {
+    font-weight: bold; /* Forma alternativa para definir peso da fonte */
+    color: #e54c1b;
+}
+
+.btn {
+    width: 108px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px; /* Adiciona bordas arrendondadas ao botão */
+    padding: 8px 12px;
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: 700;
+    color: #fff; /* Cores também podem ser resumidas, podemos usar #fff no lugar de #ffffff, ou #000 no lugar de #00000. */
+    background: #FF6E40;
+}
+
+.ilha-tinteiro {
+    width: 800px;
+}
+
+footer {
+    text-align: center;
+}

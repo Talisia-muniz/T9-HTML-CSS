@@ -1,0 +1,85 @@
+
+<!-- As *tags* são usadas para informar ao navegador a estrutura do site,
+    *atributos* servem para personalizar as tags, modificando sua estrutura ou funcionalidade.
+
+    Obs: Nem todas as tags precisam de fechamento.
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- A tag acima, *html* recebe como atributo *lang* -->
+<head>
+    <!-- 
+        Meta tags são marcações que tem como intuito descrever informações relacionadas ao website para que determinadas aplicações possam utilizadas.
+    -->
+    <meta charset="UTF-8">
+    <!-- O atributo acima define a codificação de caracteres usada na página -->
+    <meta name="author" content="Thays Giotto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+    <!-- Abaixo conectamos o HTML ao CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Abaixo inserimos a fonte que será usada-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Elementos são formados a partir de tags e entre está o conteúdo do Elemento.
+    
+    As Tags servem para marcar onde começam e terminam os Elementos. Já os Elementos são uma parte conceitual/semântica que têm um começo e fim determinados.
+    -->
+    <header class="header">
+        <!-- As heading tags possuem uma hierarquia, que vai da h1 até a h6. Essa hierarquia é simples de entender: A h1 é representa o título do texto e é a tag principal. A partir da h2 as tags vão perdendo importância até chegar na h6. Geralmente as h2, h3, h4 e h5 e h6 são tags usadas nos subtítulos.  -->
+        <h3 class="pre-titulo">As incríveis aventuras de</h2>
+        <h1 class="titulo">Xicrinho e Caneco</h1>
+    </header>
+
+    <section class="conteudo">
+        <article class="sobre">
+            <div class="texto">
+                <p>Era uma vez, num lugar mágico chamado <strong>Ilha Tinteiro</strong>,
+                <!--
+                    O elemento HTML <strong> dá ao texto uma forte importância semântica e é tipicamente mostrado em negrito.
+                    Diferente de <b>, <strong> é um estado lógico, e bold é um estado físico.
+                    <b> tem outros usos, quando se quer chamar atenção sem aumentar a importância.
+                -->
+                dois irmãos chamados Xicrinho e Caneco (<em>Cuphead and Mugman</em>)
+                <!-- 
+                    De forma semelhante a <strong>, <em> dá importância semântica a textos em itálico.
+                    <i> apenas adiciona o estilo itálico, não aumenta a importância.
+                -->
+                . Eles viviam felizes e despreocupados sob o atento olhar da sábia <a href="#velha-chaleira" class="link">Velha Chaleira</a></p>
+
+                <!-- o atributo target com o valor blank garante que o link abrirá em uma outra aba -->
+                <a href="https://store.steampowered.com/app/268910/Cuphead/" class="btn" target="_blank">Comprar</a>
+            </div>
+            <!-- O atributo alt indica texto alternativo, é uma maneira de fazer uma informação visual acessível. Ele permite que a informação seja renderizada de diversas maneiras. Por exemplo, um deficiente visual vai escutar a informação contida no atributo *alt* da imagem, utilizando um sintetizador de voz. Caso a imagem não carregue, o texto alternativo aparece no lugar.
+            -->
+            <!-- A largura de imagens também pode ser definida no próximo html, -->
+            <img src="https://studiomdhr.com/wp-content/uploads/2017/12/2M_Cuphead.gif" alt="xicrinho-e-caneco" class="imagem"/>
+        </article>
+        <br>
+        <article id="xicrinho">
+            <h3>Quem são Xicrinho e Caneco?</h3>
+
+            <h4>Xicrinho</h4>
+            <p>Xicrinho parece ser o mais confiante, audacioso e determinado dos irmãos. Seu tipo de personalidade foi inspirado pelo tipo comum de protagonista de desenhos animados de 1930, que é o tipo "carismático, porém problemático". De acordo com a introdução do jogo, Xicrinho parece ter uma personalidade gananciosa, e está disposto a arriscar qualquer coisa para obter riquezas.</p>
+
+            <h4>Caneco</h4>
+            <p>Embora ele seja divertido que Xicrinho, Caneco é mostrado sendo mais cuidadoso e menos imprudente em comparação com seu irmão. Ele age como a voz da razão.</p>
+
+            <h3>A Ilha Tinteiro</h4>
+            <p>A Ilha Tinteiro é uma área ligeiramente rural, com prados e florestas.</p>
+
+            <img src="https://vignette.wikia.nocookie.net/cuphead/images/0/07/Inkwell_Isle_1_Map_Full.png/revision/latest?cb=20180326204409" alt='ilha-tinteiro' class='ilha-tinteiro' />
+        </article>
+        <article id="velha-chaleira">
+            <h2>A Velha Chaleira</h2>
+            <!-- Exemplo utilizando uma imagem local -->
+            <img src="./images/velha-chaleira.png" alt="velha-chaleira">
+            <p>A Velha Chaleira é uma figura paterna para Xicrinho e Caneco </p>
+        </article>
+    </section>
+    <footer>
+        Cuphead - 2017
+    </footer>
+</body>
+</html>
